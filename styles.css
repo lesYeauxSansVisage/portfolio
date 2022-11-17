@@ -1,7 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --main-color: ;
+  --secondary-color: ;
+  --font-main-color: #fff;
+  --font-secondary-color: rgb(177, 177, 177);
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+
+  color: var(--font-main-color);
+
+  padding: 1rem;
+
+  background-color: rgb(32, 32, 32);
+}
+
+.principal-container {
+  height: 95vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  background: linear-gradient(
+      243deg,
+      rgba(0, 0, 0, 0.8634804263502276) 51%,
+      rgba(1, 1, 1, 0.8242647400757178) 87%
+    ),
+    url("/assets/imgs/leonardo-yip-rVcuY3LfH_Q-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px;
+}
+
+.header__logo-container {
+  display: flex;
+}
+
+.logo-container__title {
+  font-size: 2rem;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.navigation__list li {
+  padding: 10px;
+}
+
+.navigation__list li.active {
+  border-bottom: 3px solid #fff;
+}
+
+.navigation__list li a {
+  text-decoration: none;
+  color: var(--font-main-color);
+}
+
+.navigation__list li a:hover {
+  color: var(--font-secondary-color);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__logo-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-box__title {
+  color: var(--font-secondary-color);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.logo-box__title span {
+  color: rgb(154, 14, 1);
 }
