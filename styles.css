@@ -35,7 +35,7 @@ body {
       rgba(0, 0, 0, 0.8634804263502276) 51%,
       rgba(1, 1, 1, 0.8242647400757178) 87%
     ),
-    url("/assets/imgs/leonardo-yip-rVcuY3LfH_Q-unsplash.jpg");
+    url("./assets/imgs/leonardo-yip-rVcuY3LfH_Q-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,6 +63,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
+
   list-style-type: none;
 }
 
