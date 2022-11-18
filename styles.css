@@ -15,18 +15,24 @@
   --font-secondary-color: rgb(177, 177, 177);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
 
   color: var(--font-main-color);
 
-  padding: 1rem;
+  /* padding: 1rem; */
 
   background-color: rgb(32, 32, 32);
+
+  padding: 1rem;
 }
 
 .principal-container {
-  height: 95vh;
+  height: calc(100vh - 1.5rem);
   display: grid;
   grid-template-rows: auto 1fr;
 
@@ -49,6 +55,12 @@ body {
   justify-content: space-between;
 
   padding: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
 }
 
 .header__logo-container {
@@ -69,15 +81,39 @@ body {
 
 .navigation__list li {
   padding: 10px;
+
+  position: relative;
+
+  transition: all 3s ease;
 }
 
-.navigation__list li.active {
-  border-bottom: 3px solid #fff;
+.navigation__list li::after {
+  content: "";
+
+  background-color: var(--font-main-color);
+
+  height: 3px;
+
+  transition: width 1s ease;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navigation__list li:hover::after {
+  width: 100%;
+}
+
+.navigation__list li.active::after {
+  width: 100%;
 }
 
 .navigation__list li a {
   text-decoration: none;
   color: var(--font-main-color);
+
+  transition: color 0.4s ease;
 }
 
 .navigation__list li a:hover {
@@ -104,4 +140,36 @@ body {
 
 .logo-box__title span {
   color: rgb(154, 14, 1);
+}
+
+section {
+  height: 100vh;
+}
+
+.about {
+  position: relative;
+}
+
+.about__text-box {
+  width: 80%;
+  max-width: 600px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about__text {
+  font-size: 1.5rem;
+  text-align: justify;
 }
