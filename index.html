@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>Portfólio</title>
 </head>
 
 <body>
+
+    <div class="backdrop"></div>
+
     <header class="header">
         <div class="header__logo-container">
             <div class="logo-container__img">
@@ -20,27 +26,31 @@
 
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="active"><a href="#main">Principal</a></li>
+                <li><a href="#main">Principal</a></li>
                 <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
                 <li><a href="#">Atuação Profissional</a></li>
                 <li><a href="#">Formação</a></li>
             </ul>
         </nav>
+
+        <button class="header__menu-button" id="header-menu-button"><i class="fa-solid fa-bars"></i></button>
+
+
     </header>
 
-    <div class="principal-container">
 
 
-        <section class="hero" id="main">
-            <div class="hero__logo-box">
-                <h1 class="logo-box__title">Lorem ipsum dolor, <span>Portfolio</span></h1>
-                <p class="logo-box-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, blanditiis.
-                </p>
-            </div>
-        </section>
-    </div>
+
+    <section class="hero" id="main">
+        <div class="hero__logo-box">
+            <h1 class="logo-box__title">Lorem ipsum dolor, <span>Portfolio</span></h1>
+            <p class="logo-box-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, blanditiis.
+            </p>
+        </div>
+    </section>
+
     <section class="about" id="about">
 
         <div class="about__text-box">
@@ -57,7 +67,8 @@
         </div>
 
     </section>
-    <section class="projects"></section>
+    <section class="projects" id="projects">projetos</section>
+    <section class="contact" id="contact">contatos</section>
 
 
     <script src="main.js"></script>
