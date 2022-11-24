@@ -9,10 +9,12 @@
 }
 
 :root {
-  --main-color: rgba(30, 30, 30, 0.9);
-  --secondary-color: ;
+  --main-color: #323232;
+  --secondary-color: #0d7377;
+  --transparent-color: rgba(50, 50, 50, 0.8);
+
   --font-main-color: #fff;
-  --font-secondary-color: rgb(177, 177, 177);
+  --font-secondary-color: rgb(105, 105, 105);
 }
 
 html {
@@ -26,9 +28,7 @@ body {
 
   /* padding: 1rem; */
 
-  background-color: rgb(32, 32, 32);
-
-  padding: 0 1rem 1rem;
+  background-color: var(--secondary-color);
 }
 
 .header {
@@ -43,6 +43,13 @@ body {
   left: 0;
   z-index: 3;
   width: 100%;
+
+  transition: 0.4s background ease;
+}
+
+.header.active {
+  background-color: var(--transparent-color);
+  backdrop-filter: blur(10px);
 }
 
 .header__logo-container {
@@ -50,6 +57,7 @@ body {
 }
 
 .logo-container__title {
+  color: var(--font-main-color);
   font-size: 2rem;
 }
 
@@ -72,7 +80,7 @@ body {
 .navigation__list li:after {
   content: "";
 
-  background-color: var(--font-main-color);
+  background-color: var(--secondary-color);
 
   height: 3px;
 
@@ -100,8 +108,12 @@ body {
   transition: color 0.4s ease;
 }
 
+.navigation__list li.active a {
+  color: var(--secondary-color);
+}
+
 .navigation__list li a:hover {
-  color: var(--font-secondary-color);
+  color: var(--secondary-color);
 }
 
 .navigation.active {
@@ -125,7 +137,7 @@ body {
 .hero {
   position: relative;
 
-  height: calc(100vh - 2rem);
+  min-height: calc(100vh - 1rem);
 
   padding-top: 1rem;
 
@@ -156,15 +168,21 @@ body {
   text-align: right;
 }
 
+.logo_box__subtitle {
+  color: var(--font-secondary-color);
+}
+
 .logo-box__title span {
-  color: rgb(154, 14, 1);
+  color: var(--secondary-color);
 }
 
 section {
   min-height: 100vh;
 }
 
-.about {
+.about,
+.education,
+.professional-practice {
   padding-top: 3rem;
 }
 
@@ -182,6 +200,37 @@ section {
 
   margin: 0 auto;
   margin-top: 3rem;
+  padding: 2rem 0;
+}
+
+.education,
+.projects {
+  background-color: var(--main-color);
+
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  width: 500px;
+  height: 500px;
+
+  gap: 1rem;
+}
+
+.project {
+  background-color: var(--secondary-color);
 }
 
 .about__title {
@@ -194,14 +243,22 @@ section {
   text-align: justify;
 }
 
+.footer {
+  background-color: var(--main-color);
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
 .backdrop {
-  background-color: rgba(1, 1, 1, 0.7);
+  background-color: var(--transparent-color);
+  backdrop-filter: blur(10px);
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   transition: transform 0.4s ease;
 
   transform: scale(0);
@@ -216,6 +273,7 @@ section {
     position: fixed;
     right: 0;
     top: 0;
+    z-index: 2;
 
     display: flex;
 
