@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/css/style.css">
     <title>Portfólio</title>
 </head>
 
@@ -17,13 +17,7 @@
     <div class="backdrop"></div>
 
     <header class="header">
-
-        <div class="header__logo-container">
-            <div class="logo-container__img">
-                <img src="" alt="">
-            </div>
-            <h3 class="logo-container__title">Portfolio</h3>
-        </div>
+        <h3 class="header__title"><a href="#main">&lt;Gilberto &#8725;&gt;</a></h3>
 
         <nav class="navigation">
             <ul class="navigation__list">
@@ -37,79 +31,230 @@
         </nav>
 
         <button class="header__menu-button" id="header-menu-button"><i class="fa-solid fa-bars"></i></button>
-
-
     </header>
 
 
 
 
     <section class="hero" id="main">
-        <div class="hero__logo-box">
-            <h1 class="logo-box__title">Lorem ipsum dolor, <span>Portfolio</span></h1>
-            <p class="logo-box__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, blanditiis.
+        <div class="logo-box">
+            <h1 class="logo-box__title">Olá. Meu nome é <span>&lt;Gilberto&#8725;&gt</span></h1>
+            <p class="logo-box__subtitle">Desenvolvedor Front End.
             </p>
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="text-section" id="about">
 
-        <div class="about__text-box">
-            <h2 class="about__title">Sobre mim</h2>
-            <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolorem eum
-                provident fugiat
-                laboriosam quisquam animi voluptate, tempora dignissimos esse, nisi nam nemo dicta est, odit ipsam
-                velit.
-                Dolorum voluptate consequatur ducimus hic natus neque omnis necessitatibus voluptatem aperiam et iure
-                cum ad
-                earum molestiae consequuntur eius accusantium, totam a. Nobis explicabo reiciendis eveniet, perspiciatis
-                sequi neque possimus cum tempore accusantium numquam dolores aperiam, labore voluptate et expedita.
-                Asperiores, a!</p>
+        <div class="text-section__box">
+            <h2 class="box__title">Sobre mim</h2>
+            <p class="box__text">Sou um desenvolvedor Front End atualmente participando do programa de residência da
+                IUUL. Apaixonado por design de interfaces e atualmente estudando Angular.</p>
         </div>
 
     </section>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-top">
+        <path fill="" fill-opacity="1"
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
     <section class="projects" id="projects">
         <h2>Projetos</h2>
-        <!-- <div class="projects__container">
-            <div class="project">
-                <div class="project__img"></div>
-                <div class="project__info">
-                    .project__onfp
+        <div class="projects__container">
+            <article class="project">
+                <div class="project__img">
+                    <img src="./assets/imgs/kaiji-projeto.png" alt="Imagem do projeto do jogo de cartas">
                 </div>
-            </div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-        </div> -->
-    </section>
-    <section class="professional-practice" id="professional-practice">
-        <div class="about__text-box">
-            <h2 class="about__title">Atuação Profissional</h2>
-            <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolorem eum
-                provident fugiat
-                laboriosam quisquam animi voluptate, tempora dignissimos esse, nisi nam nemo dicta est, odit ipsam
-                velit.
-                Dolorum voluptate consequatur ducimus hic natus neque omnis necessitatibus voluptatem aperiam et iure
-                cum ad
-                earum molestiae consequuntur eius accusantium, totam a. Nobis explicabo reiciendis eveniet, perspiciatis
-                sequi neque possimus cum tempore accusantium numquam dolores aperiam, labore voluptate et expedita.
-                Asperiores, a!</p>
+                <div class="project__info">
+                    <h4 class="project__name">Paper, Rock, Scissors</h4>
+                    <p class="project__description">Um jogo baseado em uma animação. Basicamente um jogo de Pedra Papel
+                        Tesoura, porém você recebe cards já pré determinados.</p>
+
+                    <div class="project__technologies">
+                        <span class="technology"><a href="#javascript">Javascript</a></span>
+                        <span class="technology"><a href="#html">HTML</a></span>
+                        <span class="technology">CSS</span>
+                    </div>
+
+                    <div class="project__links">
+                        <a target="_blank"
+                            href="https://github.com/lesYeauxSansVisage/Restricted-Paper-Card-Scissors"><i
+                                class="fa-brands fa-github"></i> Github</a>
+                        <a target="_blank"
+                            href="https://lesyeauxsansvisage.github.io/Restricted-Paper-Card-Scissors/#boardGame"
+                            class="link--secondary"><i class="fa-solid fa-play"></i> Demo</a>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="project">
+                <div class="project__img">
+                    <img src="./assets/imgs/livraria-projeto.png" alt="Imagem do projeto do jogo de cartas">
+                </div>
+                <div class="project__info">
+                    <h4 class="project__name">Livraria</h4>
+                    <p class="project__description">Uma aplicação feita pra salvar os livros que você já leu. É possível
+                        adicionar os nomes dos livros, número de páginas e autores, assim como definir se já foi lido ou
+                        não.</p>
+                    <div class="project__technologies">
+                        <span class="technology"><a href="#javascript">Javascript</a></span>
+                        <span class="technology"><a href="#html">HTML</a></span>
+                        <span class="technology">CSS</span>
+                    </div>
+                    <div class="project__links">
+                        <a target="_blank" href="https://github.com/lesYeauxSansVisage/library"><i
+                                class="fa-brands fa-github"></i> Github</a>
+                        <a target="_blank" href="https://lesyeauxsansvisage.github.io/library/"
+                            class="link--secondary"><i class="fa-solid fa-play"></i> Demo</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project__img">
+                    <img src="./assets/imgs/restaurante-projeto.png" alt="Imagem do projeto do jogo de cartas">
+                </div>
+                <div class="project__info">
+                    <h4 class="project__name">Restaurante</h4>
+                    <p class="project__description">Uma página feita para um restaurente fictício.</p>
+
+                    <div class="project__technologies">
+                        <span class="technology"><a href="#javascript">Javascript</a></span>
+                        <span class="technology"><a href="#html">HTML</a></span>
+                        <span class="technology">CSS</span>
+                    </div>
+                    <div class="project__links">
+                        <a target="_blank" href="https://github.com/lesYeauxSansVisage/restaurant-page"><i
+                                class="fa-brands fa-github"></i> Github</a>
+                        <a target="_blank" href="https://lesyeauxsansvisage.github.io/restaurant-page/"
+                            class="link--secondary"><i class="fa-solid fa-play"></i> Demo</a>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
-    <section class="education" id="education">
-        <div class="about__text-box">
-            <h2 class="about__title">Formação</h2>
-            <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolorem eum
-                provident fugiat
-                laboriosam quisquam animi voluptate, tempora dignissimos esse, nisi nam nemo dicta est, odit ipsam
-                velit.
-                Dolorum voluptate consequatur ducimus hic natus neque omnis necessitatibus voluptatem aperiam et iure
-                cum ad
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-bottom">
+        <path fill="" fill-opacity="1"
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+        </path>
+    </svg>
+
+
+
+    <section class="text-section" id="professional-practice">
+        <div class="text-section__box">
+            <h2 class="box__title">Atuação Profissional</h2>
+            <p class="box__text">Apesar de ainda não possuir experiência profissional na área de Tecnologia, já
+                trabalhei anteriormente diretamente com o público e estou sempre pesquisando novas tecnologias e
+                desenvolvendo projetos para me capacitar.</p>
+        </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-top">
+        <path fill="" fill-opacity="1"
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+    <section class="text-section" id="education">
+        <div class="text-section__box">
+            <h2 class="bpx__title">Formação</h2>
+            <p class="box__text">Estudante do 3º semestre de Análise e Desenvolvimento de Sistemas pela instituição de
+                ensino FAM - Faculdade das Américas.
+                <br>
+                <br>
+                Participei do programa em conjunto da Google junto com o CIEE, onde é disponibilizado um curso completo
+                sobre UX Design.
             </p>
         </div>
     </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-bottom">
+        <path fill="" fill-opacity="1"
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+        </path>
+    </svg>
+
+    <section class="technology-description">
+        <h2>Tecnologias usadas nos projetos</h2>
+        <div class="technology" id="javascript">
+            <h3 class="technology__name">Javascript</h3>
+            <p class="technology_description">JavaScript é uma linguagem de script orientada a objetos,
+                multiplataforma. É uma linguagem pequena e leve. Dentro de um ambiente de host (por exemplo, um
+                navegador web) o JavaScript pode ser ligado aos objetos deste ambiente para prover um controle
+                programático sobre eles.
+
+            </p>
+            <p>Site oficial: <a href="https://www.javascript.com/" target="_blank">https://www.javascript.com/</a></p>
+            <div class="technology__evaluate">
+                <h4>Pros:</h4>
+                <ul class="pros">
+                    <li>Velocidade</li>
+                    <li>Simplicidade</li>
+                    <li>Versatilidade</li>
+                </ul>
+                <h4>Contras:</h4>
+                <ul class="cons">
+                    <li>Inconsistência entre Browsers</li>
+                    <li>Segurança Client-side</li>
+                    <li>Herança</li>
+                </ul>
+            </div>
+
+            <div class="technology__projects">
+                <h4>Projetos que utilizam JavaScript: </h4>
+
+                <span>Google</span>
+                <span>Youtube</span>
+                <span>GoodReads</span>
+                <span>Reddit</span>
+                <span>Facebook</span>
+                <span>Twitter</span>
+            </div>
+        </div>
+
+        <div class="technology" id="html">
+            <h3 class="technology__name">HTML</h3>
+            <p class="technology_description">A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador
+                que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto
+                usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série
+                de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento.
+            </p>
+            <p>Site oficial: <a href="https://html.com/" target="_blank">https://html.com/</a></p>
+            <div class="technology__evaluate">
+                <h4>Pros:</h4>
+                <ul class="pros">
+                    <li>Simples de Aprender</li>
+                    <li>Leve e Rápido</li>
+                    <li>Design Básico</li>
+                </ul>
+                <h4>Contras:</h4>
+                <ul class="cons">
+                    <li>Linguagem estática</li>
+                    <li>Código Extensivo</li>
+                </ul>
+            </div>
+
+            <div class="technology__projects">
+                <h4>Projetos que utilizam HTML: </h4>
+
+                <span>Todos os sites utilizam HTML</span>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-top">
+        <path fill="" fill-opacity="1"
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
     <section class="contact" id="contact">
         <h2>Contato</h2>
+
+        <div class="contact__social-media">
+            <a href="https://github.com/lesYeauxSansVisage/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gilberto-araujo-872274220/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+        </div>
 
         <form class="form">
             <div class="form-control">
@@ -123,14 +268,26 @@
             <div class="form-control">
                 <label for="message">Mensagem</label>
 
-                <textarea name="message">
-
-                    </textarea>
+                <textarea name="message"></textarea>
             </div>
 
         </form>
+
+        <h3 class="personal-contact">
+            <span class="telefone">+55 55 55555555</span>
+            <span class="email">example@outlook.com</span>
+        </h3>
     </section>
-    <footer class=" footer">Footer Placeholder</footer>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-bottom">
+        <path fill="" fill-opacity="1"
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+        </path>
+    </svg>
+    <footer class=" footer">
+        <a href="https://github.com/lesYeauxSansVisage/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gilberto-araujo-872274220/" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
 
     <script src="main.js"></script>
 </body>
