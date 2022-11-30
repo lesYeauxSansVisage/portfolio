@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #1b1b1b;
+  --secondary-color: #0a585b;
+  --transparent-color: rgba(16, 16, 16, 0.8);
+
+  --font-main-color: rgb(237, 237, 237);
+  --font-secondary-color: rgb(184, 184, 184);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+
+  color: var(--font-main-color);
+
+  /* padding: 1rem; */
+
+  background-color: var(--secondary-color);
+
+  display: flex;
+  flex-direction: column;
+}
+
+svg {
+  fill: var(--main-color);
+}
+
+section {
+  min-height: 100vh;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+.svg-top {
+  margin-bottom: -10px;
+}
+
+.svg-bottom {
+  margin-top: -10px;
+}
+
+#education {
+  background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-main-color);
+}
+
+.education,
+.projects {
+  background-color: var(--main-color);
+}
+
+@import "header.scss";
+
+@import "hero.scss";
+
+@import "text-section";
+
+@import "projects.scss";
+
+@import "contact.scss";
+
+@import "technology";
+
+@import "footer.scss";
+
+.backdrop {
+  background-color: var(--transparent-color);
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: transform 0.4s ease;
+
+  transform: scale(0);
+}
+
+.backdrop.active {
+  transform: scale(1);
+}

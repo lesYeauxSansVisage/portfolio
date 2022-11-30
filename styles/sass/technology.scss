@@ -1,0 +1,65 @@
+.technology-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  padding: 1rem 0;
+
+  font-size: 1.5rem;
+
+  h2 {
+    width: 90%;
+    text-align: center;
+  }
+
+  .technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    background-color: var(--transparent-color);
+    padding: 1rem;
+
+    width: 90%;
+    max-width: 600px;
+
+    &__name {
+      font-size: 1.5rem;
+    }
+
+    &__evaluate {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      ul {
+        list-style-type: none;
+
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        background-color: var(--secondary-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
