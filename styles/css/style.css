@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 65px;
 }
 
 body {
@@ -186,7 +187,7 @@ a {
   color: var(--font-main-color);
   font-size: 3rem;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
   margin-bottom: 15px;
 }
 .hero .logo-box__title span {
@@ -198,13 +199,9 @@ a {
   text-align: center;
 }
 
-.text-section {
-  display: grid;
-  place-content: center;
-}
 .text-section__box {
   width: 80%;
-  max-width: 600px;
+  max-width: 800px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -234,7 +231,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 0;
+  scroll-padding-top: 4rem;
 }
 .projects h2 {
   margin-bottom: 50px;
@@ -338,7 +335,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: var(--main-color);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .contact h2 {
   margin-bottom: 20px;
@@ -419,13 +416,20 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  background-color: var(--transparent-color);
+  background-color: var(--main-color);
   padding: 1rem;
   width: 90%;
   max-width: 600px;
 }
+.technology-description .technology__site a {
+  display: block;
+  width: 80%;
+}
 .technology-description .technology__name {
   font-size: 1.5rem;
+}
+.technology-description .technology__img img {
+  height: 250px;
 }
 .technology-description .technology__evaluate {
   display: flex;
@@ -437,6 +441,10 @@ a {
 }
 .technology-description .technology__evaluate ul {
   list-style-type: none;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .technology-description .technology__evaluate ul li {
   font-size: 1rem;
@@ -456,7 +464,7 @@ a {
 
 .footer {
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
   display: flex;
   align-items: center;
@@ -469,6 +477,11 @@ a {
 }
 .footer a:hover {
   color: var(--font-secondary-color);
+}
+.footer a span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
 }
 
 .backdrop {
