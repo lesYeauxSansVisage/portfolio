@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch styles/sass/main.scss styles/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesYeauxSansVisage/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lesYeauxSansVisage/portfolio/issues"
+  },
+  "homepage": "https://github.com/lesYeauxSansVisage/portfolio#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
