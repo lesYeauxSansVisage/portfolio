@@ -30,10 +30,8 @@ backdrop.addEventListener("click", () => {
 
 const header = document.querySelector(".header");
 
-window.addEventListener("scroll", fixNav);
-
 function fixNav() {
-  if (window.scrollY > header.offsetHeight + 84) {
+  if (window.scrollY > header.offsetHeight + 70) {
     header.classList.add("active");
   } else {
     header.classList.remove("active");
@@ -46,6 +44,8 @@ const sections = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", navHighlighter);
 
 function navHighlighter() {
+  fixNav();
+
   let scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
