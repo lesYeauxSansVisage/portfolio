@@ -1,11 +1,9 @@
 const navigationItems = document.querySelectorAll(".navigation__list li a");
-
-navigationItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    removeActive();
-    item.parentElement.classList.add("active");
-  });
-});
+const menuBtn = document.querySelector("#header-menu-button");
+const backdrop = document.querySelector(".backdrop");
+const nav = document.querySelector(".navigation");
+const header = document.querySelector(".header");
+const sections = document.querySelectorAll("section[id]");
 
 function removeActive() {
   const currentActive = document.querySelector(".navigation li.active");
@@ -14,22 +12,6 @@ function removeActive() {
   }
 }
 
-const menuBtn = document.querySelector("#header-menu-button");
-const backdrop = document.querySelector(".backdrop");
-const nav = document.querySelector(".navigation");
-
-menuBtn.addEventListener("click", () => {
-  nav.classList.add("active");
-  backdrop.classList.add("active");
-});
-
-backdrop.addEventListener("click", () => {
-  nav.classList.remove("active");
-  backdrop.classList.remove("active");
-});
-
-const header = document.querySelector(".header");
-
 function fixNav() {
   if (window.scrollY > header.offsetHeight + 70) {
     header.classList.add("active");
@@ -37,11 +19,6 @@ function fixNav() {
     header.classList.remove("active");
   }
 }
-
-const sections = document.querySelectorAll("section[id]");
-
-// Add an event listener listening for scroll
-window.addEventListener("scroll", navHighlighter);
 
 function navHighlighter() {
   fixNav();
@@ -67,3 +44,23 @@ function navHighlighter() {
     }
   });
 }
+
+navigationItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    removeActive();
+    item.parentElement.classList.add("active");
+  });
+});
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.add("active");
+  backdrop.classList.add("active");
+});
+
+backdrop.addEventListener("click", () => {
+  nav.classList.remove("active");
+  backdrop.classList.remove("active");
+});
+
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlighter);
