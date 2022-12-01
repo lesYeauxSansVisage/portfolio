@@ -199,6 +199,9 @@ a {
   text-align: center;
 }
 
+.text-section {
+  padding-top: 2rem;
+}
 .text-section__box {
   width: 80%;
   max-width: 800px;
@@ -231,7 +234,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  scroll-padding-top: 4rem;
+  padding: 2rem 0;
 }
 .projects h2 {
   margin-bottom: 50px;
@@ -420,10 +423,6 @@ a {
   padding: 1rem;
   width: 90%;
   max-width: 600px;
-}
-.technology-description .technology__site a {
-  display: block;
-  width: 80%;
 }
 .technology-description .technology__name {
   font-size: 1.5rem;
