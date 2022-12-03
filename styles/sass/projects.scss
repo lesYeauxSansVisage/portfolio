@@ -21,6 +21,7 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
+    flex-wrap: wrap;
 
     gap: 6rem;
 
@@ -60,6 +61,27 @@
     align-items: center;
     width: 60%;
     gap: 1.5rem;
+
+    .demo-button {
+      background-color: var(--secondary-color);
+
+      outline: none;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+
+      color: var(--font-main-color);
+      font-family: inherit;
+
+      cursor: pointer;
+
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        background-color: var(--font-main-color);
+        color: var(--secondary-color);
+      }
+    }
   }
 
   &__name {
@@ -108,6 +130,15 @@
     a.link--secondary:hover {
       color: var(--secondary-color);
       background-color: var(--font-main-color);
+    }
+  }
+
+  &__video {
+    width: 80%;
+    max-width: 800px;
+
+    video {
+      width: 100%;
     }
   }
 }
