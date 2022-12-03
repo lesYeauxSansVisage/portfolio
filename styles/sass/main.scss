@@ -95,6 +95,10 @@ a {
   z-index: 3;
   transition: transform 0.4s ease;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   transform: scale(0);
 }
 
