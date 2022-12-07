@@ -113,7 +113,7 @@
 
       border-radius: 5px;
 
-      transition: color 0.4s ease;
+      transition: all 0.4s ease;
     }
 
     a:hover {
@@ -128,8 +128,8 @@
     }
 
     a.link--secondary:hover {
-      color: var(--secondary-color);
-      background-color: var(--font-main-color);
+      color: var(--main-color);
+      background-color: var(--secondary-color);
     }
   }
 
