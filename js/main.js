@@ -1,6 +1,12 @@
 import { backdrop, backdropListener } from "./backdrop.js";
 import { demoButtonListener, demoButtons } from "./demo.js";
-import { navigationItems, menuBtn, navHighlighter, nav } from "./navigation.js";
+import {
+  navigationItems,
+  menuBtn,
+  navHighlighter,
+  nav,
+  removeActive,
+} from "./navigation.js";
 import {
   clearMessagesBtn,
   clearMessagesBtnListener,
