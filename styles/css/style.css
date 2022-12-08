@@ -147,7 +147,7 @@ a {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 2;
+    z-index: 6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -422,6 +422,30 @@ a {
   width: 100%;
   resize: none;
 }
+.form__buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.form__buttons button {
+  padding: 1rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid var(--font-secondary-color);
+  color: var(--font-main-color);
+  background-color: transparent;
+  transition: transform 0.4s ease-in-out;
+}
+.form__buttons button#clear {
+  background-color: rgb(138, 0, 0);
+}
+.form__buttons button:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
 
 .technology-description {
   display: flex;
@@ -523,6 +547,55 @@ a {
 
 .backdrop.active {
   transform: scale(1);
+}
+
+.message-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: scroll;
+  height: 75vh;
+  min-height: 0;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 900px;
+  background-color: var(--secondary-color);
+}
+.message-section__message {
+  gap: 1rem;
+  background-color: var(--main-color);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.message-section__message h4 {
+  font-size: 1.3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+.message-section__message p {
+  font-size: 1rem;
+  text-align: justify;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 16px 0;
+}
+.message-section__message span {
+  margin-top: 16px;
+  text-align: right;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
