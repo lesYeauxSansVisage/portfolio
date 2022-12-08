@@ -1,8 +1,22 @@
 import { backdrop, backdropListener } from "./backdrop.js";
 import { demoButtonListener, demoButtons } from "./demo.js";
-import { navigationItems, menuBtn, navHighlighter } from "./navigation.js";
+import { navigationItems, menuBtn, navHighlighter, nav } from "./navigation.js";
+import {
+  clearMessagesBtn,
+  clearMessagesBtnListener,
+  form,
+  formListener,
+  seeMessagesBtn,
+  seeMessagesBtnListener,
+} from "./form.js";
 
 backdrop.addEventListener("click", backdropListener);
+
+form.addEventListener("submit", formListener);
+
+seeMessagesBtn.addEventListener("click", seeMessagesBtnListener);
+
+clearMessagesBtn.addEventListener("click", clearMessagesBtnListener);
 
 demoButtons.forEach((demoButton) => {
   demoButton.addEventListener("click", demoButtonListener);
