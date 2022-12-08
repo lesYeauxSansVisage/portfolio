@@ -9,7 +9,7 @@ export const menuBtn = document.querySelector("#header-menu-button");
 const header = document.querySelector(".header");
 const sections = document.querySelectorAll("section[id]");
 
-function removeActive() {
+export function removeActive() {
   const currentActive = document.querySelector(".navigation li.active");
   if (currentActive) {
     currentActive.classList.remove("active");
