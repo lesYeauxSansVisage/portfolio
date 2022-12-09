@@ -8,8 +8,6 @@ import {
   removeActive,
 } from "./navigation.js";
 import {
-  clearMessagesBtn,
-  clearMessagesBtnListener,
   form,
   formListener,
   seeMessagesBtn,
@@ -21,8 +19,6 @@ backdrop.addEventListener("click", backdropListener);
 form.addEventListener("submit", formListener);
 
 seeMessagesBtn.addEventListener("click", seeMessagesBtnListener);
-
-clearMessagesBtn.addEventListener("click", clearMessagesBtnListener);
 
 demoButtons.forEach((demoButton) => {
   demoButton.addEventListener("click", demoButtonListener);
