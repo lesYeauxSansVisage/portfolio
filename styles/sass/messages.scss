@@ -72,7 +72,88 @@
       display: block;
     }
   }
+
+  &__clear-button {
+    font-size: 1rem;
+    font-family: inherit;
+
+    position: fixed;
+
+    bottom: 1rem;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    border: none;
+
+    background-color: var(--secondary-color);
+    color: var(--font-main-color);
+
+    transition: all 0.4s ease;
+
+    &:hover,
+    &:active {
+      background-color: var(--font-main-color);
+      color: var(--secondary-color);
+    }
+  }
 }
 
-@media only screen and (max-width: 992px) {
+.delete-popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  border-radius: 5px;
+  box-shadow: var(--font-main-color) 0 0 10px;
+
+  padding: 1rem;
+
+  background-color: var(--main-color);
+
+  width: 80%;
+  max-width: 600px;
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    font-size: 1rem;
+    font-family: inherit;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    border: none;
+
+    color: var(--font-main-color);
+
+    transition: background 0.4s ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__button--confirm {
+    background-color: rgb(138, 0, 0);
+
+    &:hover {
+      background-color: rgb(172, 0, 0);
+    }
+  }
+
+  &__button--refuse {
+    background-color: var(--main-color);
+
+    border: 1px solid var(--font-main-color);
+
+    &:hover {
+      outline: 2px solid var(--font-main-color);
+    }
+  }
 }
