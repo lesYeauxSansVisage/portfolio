@@ -73,8 +73,8 @@ export function renderMessages() {
   backdrop.append(messagesSection);
 
   if (messages.length < 1) {
-    messagesSection.innerText =
-      "Não há nenhuma mensagem no momento! Volte mais tarde";
+    messagesSection.innerHTML =
+      "<p style='font-size: 1.5rem; text-align: center'>Não há nenhuma mensagem no momento!</p>";
 
     return;
   }
