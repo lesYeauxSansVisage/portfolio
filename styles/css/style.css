@@ -406,7 +406,7 @@ a {
 }
 .form-control input,
 .form-control textarea {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: inherit;
   background-color: var(--secondary-color);
   color: var(--font-main-color);
