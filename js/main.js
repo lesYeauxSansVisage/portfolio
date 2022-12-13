@@ -14,6 +14,8 @@ import {
   seeMessagesBtnListener,
 } from "./form.js";
 
+import { technologyButtons, technologyButtonListener } from "./technologies.js";
+
 backdrop.addEventListener("click", backdropListener);
 
 form.addEventListener("submit", formListener);
@@ -37,3 +39,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", navHighlighter);
+
+technologyButtons.forEach((button) => {
+  button.addEventListener("click", technologyButtonListener);
+});
