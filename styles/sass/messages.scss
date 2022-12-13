@@ -4,8 +4,8 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 2rem;
-  overflow-y: scroll;
-  height: 75vh;
+  overflow-y: auto;
+  height: 75vh; 
   min-height: 0;
 
   padding: 1rem;
