@@ -34,9 +34,6 @@
         <button class="header__menu-button" id="header-menu-button"><i class="fa-solid fa-bars"></i></button>
     </header>
 
-
-
-
     <section class="hero" id="main">
         <div class="logo-box">
             <h1 class="logo-box__title">Olá. Meu nome é <span>&lt;Gilberto&#8725;&gt</span></h1>
@@ -54,7 +51,6 @@
         </div>
 
     </section>
-
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-top">
         <path fill="" fill-opacity="1"
@@ -75,9 +71,9 @@
                         Tesoura, porém você recebe cards já pré determinados.</p>
 
                     <div class="project__technologies">
-                        <span class="technology"><a href="#javascript">Javascript</a></span>
-                        <span class="technology"><a href="#html">HTML</a></span>
-                        <span class="technology"><a href="#css">CSS</a></span>
+                        <button class="project__technologies-button">Javascript</button>
+                        <button class="project__technologies-button">HTML</button>
+                        <button class="project__technologies-button">CSS</button>
                     </div>
 
                     <div class="project__links">
@@ -103,9 +99,9 @@
                         adicionar os nomes dos livros, número de páginas e autores, assim como definir se já foi lido ou
                         não.</p>
                     <div class="project__technologies">
-                        <span class="technology"><a href="#javascript">Javascript</a></span>
-                        <span class="technology"><a href="#html">HTML</a></span>
-                        <span class="technology"><a href="#css">CSS</a></span>
+                        <button class="project__technologies-button">Javascript</button>
+                        <button class="project__technologies-button">HTML</button>
+                        <button class="project__technologies-button">CSS</button>
                     </div>
                     <div class="project__links">
                         <a target="_blank" href="https://github.com/lesYeauxSansVisage/library"><i
@@ -125,9 +121,9 @@
                     <p class="project__description">Uma página feita para um restaurante fictício.</p>
 
                     <div class="project__technologies">
-                        <span class="technology"><a href="#javascript">Javascript</a></span>
-                        <span class="technology"><a href="#html">HTML</a></span>
-                        <span class="technology"><a href="#css">CSS</a></span>
+                        <button class="project__technologies-button">Javascript</button>
+                        <button class="project__technologies-button">HTML</button>
+                        <button class="project__technologies-button">CSS</button>
                     </div>
                     <div class="project__links">
                         <a target="_blank" href="https://github.com/lesYeauxSansVisage/restaurant-page"><i
@@ -147,129 +143,6 @@
         </path>
     </svg>
 
-
-    <section class="technology-description">
-        <h2>Tecnologias usadas nos projetos</h2>
-        <div class="technology" id="javascript">
-            <h3 class="technology__name">Javascript</h3>
-            <div class="technology__img">
-                <img src="assets/imgs/icons8-logotipo-javascript-250.png" alt="">
-            </div>
-            <p class="technology_description">JavaScript é uma linguagem de script orientada a objetos,
-                multiplataforma. É uma linguagem pequena e leve. Dentro de um ambiente de host (por exemplo, um
-                navegador web) o JavaScript pode ser ligado aos objetos deste ambiente para prover um controle
-                programático sobre eles.
-
-            </p>
-
-            <div class="technology__evaluate">
-                <h4>Pros:</h4>
-                <ul class="pros">
-                    <li>Velocidade</li>
-                    <li>Simplicidade</li>
-                    <li>Versatilidade</li>
-                </ul>
-                <h4>Contras:</h4>
-                <ul class="cons">
-                    <li>Inconsistência entre Browsers</li>
-                    <li>Segurança Client-side</li>
-                    <li>Herança</li>
-                </ul>
-            </div>
-
-            <div class="technology__projects">
-                <h4>Projetos que utilizam JavaScript: </h4>
-
-                <span>Google</span>
-                <span>Youtube</span>
-                <span>GoodReads</span>
-                <span>Reddit</span>
-                <span>Facebook</span>
-                <span>Twitter</span>
-            </div>
-        </div>
-
-        <div class="technology" id="html">
-            <h3 class="technology__name">HTML</h3>
-            <div class="technology__img">
-                <img src="assets/imgs/icons8-html-5-250.png" alt="">
-            </div>
-            <p class="technology_description">A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador
-                que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto
-                usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série
-                de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento.
-            </p>
-
-            <div class="technology__evaluate">
-                <h4>Pros:</h4>
-                <ul class="pros">
-                    <li>Simples de Aprender</li>
-                    <li>Leve e Rápido</li>
-                    <li>Design Básico</li>
-                </ul>
-                <h4>Contras:</h4>
-                <ul class="cons">
-                    <li>Linguagem estática</li>
-                    <li>Código Extenso</li>
-                </ul>
-            </div>
-
-            <div class="technology__projects">
-                <h4>Projetos que utilizam HTML: </h4>
-
-                <span>Udemy</span>
-                <span>Reddit</span>
-                <span>CRED</span>
-                <span>Lyft</span>
-                <span>Stackshare</span>
-                <span>Delivery Hero</span>
-            </div>
-        </div>
-
-
-        <div class="technology" id="css">
-            <h3 class="technology__name">CSS</h3>
-            <div class="technology__img">
-                <img src="assets/imgs/icons8-css3-250 (2).png" alt="">
-            </div>
-            <p class="technology_description">CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido
-                para o português, significa Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é
-                facilmente utilizado com as linguagens de marcação HTML ou XHTML.
-            </p>
-
-            <div class="technology__evaluate">
-                <h4>Pros:</h4>
-                <ul class="pros">
-                    <li>Possibilidade de personalizar os sites</li>
-                    <li>Organização de arquivos mais eficiente</li>
-                    <li>Integração com HTML</li>
-                </ul>
-                <h4>Contras:</h4>
-                <ul class="cons">
-                    <li>Nem sempre há compatilidade de estilo entre os navegadores</li>
-                    <li>Dependendo do uso, a página pode perder desempenho</li>
-                </ul>
-            </div>
-
-            <div class="technology__projects">
-                <h4>Projetos que utilizam CSS: </h4>
-
-                <span>Glovo</span>
-                <span>ROBLOX</span>
-                <span>MasterCard</span>
-                <span>Backbase</span>
-                <span>Signal</span>
-                <span>SendCloud</span>
-            </div>
-        </div>
-    </section>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-top">
-        <path fill="" fill-opacity="1"
-            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-        </path>
-    </svg>
-
     <section class="text-section" id="education">
         <div class="text-section__box">
             <h2 class="bpx__title">Formação</h2>
@@ -282,9 +155,9 @@
             </p>
         </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-top">
         <path fill="" fill-opacity="1"
-            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
         </path>
     </svg>
 
@@ -297,9 +170,9 @@
         </div>
     </section>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-bottom">
         <path fill="" fill-opacity="1"
-            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
         </path>
     </svg>
     <section class="contact" id="contact">
@@ -338,9 +211,9 @@
             <span class="email">example@outlook.com</span>
         </h3>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-top">
         <path fill="" fill-opacity="1"
-            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+            d="M0,160L40,170.7C80,181,160,203,240,213.3C320,224,400,224,480,208C560,192,640,160,720,170.7C800,181,880,235,960,229.3C1040,224,1120,160,1200,138.7C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
         </path>
     </svg>
     <footer class=" footer">
