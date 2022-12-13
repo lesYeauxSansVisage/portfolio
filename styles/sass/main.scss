@@ -56,17 +56,13 @@ section h2 {
   margin-top: -10px;
 }
 
-#education {
-  background-color: var(--main-color);
-}
-
 a {
   text-decoration: none;
   color: var(--font-main-color);
 }
 
 .education,
-.projects {
+#professional-practice {
   background-color: var(--main-color);
 }
 
@@ -109,3 +105,11 @@ a {
 @import "messages.scss";
 
 @import "modal.scss";
+
+button {
+  border: none;
+  font-family: inherit;
+  outline: none;
+
+  cursor: pointer;
+}
