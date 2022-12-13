@@ -59,7 +59,7 @@ function createTechnologyElement(technology) {
 const technologiesInfo = {
   javascript: {
     name: "JavaScript",
-    img: "../assets/imgs/icons8-logotipo-javascript-250.png",
+    img: "./assets/imgs/icons8-logotipo-javascript-250.png",
     description:
       "JavaScript é uma linguagem de script orientada a objetos, multiplataforma. É uma linguagem pequena e leve. Dentro de um ambiente de host (por exemplo, um navegador web) o JavaScript pode ser ligado aos objetos deste ambiente para prover um controle programático sobre eles.",
     pros: ["Velocidade", "Simplicidade", "Versatilidade"],
@@ -75,7 +75,7 @@ const technologiesInfo = {
   },
   html: {
     name: "HTML",
-    img: "../assets/imgs/icons8-html-5-250.png",
+    img: "./assets/imgs/icons8-html-5-250.png",
     description:
       "A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento.",
     pros: ["Simples de Aprender", "Leve e Rápido", "Design Básico"],
@@ -91,7 +91,7 @@ const technologiesInfo = {
   },
   css: {
     name: "CSS",
-    img: "../assets/imgs/icons8-css3-250 (2).png",
+    img: "./assets/imgs/icons8-css3-250 (2).png",
     description:
       "CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é facilmente utilizado com as linguagens de marcação HTML ou XHTML.",
     pros: [
