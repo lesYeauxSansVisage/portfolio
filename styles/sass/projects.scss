@@ -10,6 +10,8 @@
 
   padding: 2rem 0;
 
+  background-color: var(--main-color);
+
   h2 {
     margin-bottom: 50px;
 
@@ -41,6 +43,16 @@
   gap: 1rem;
 
   flex: 1 1 0;
+
+  &__technologies-button {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--font-main-color);
+
+    background-color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
 
   &__img {
     width: 100%;
@@ -156,13 +168,4 @@
       width: 100%;
     }
   }
-}
-
-.technology {
-  font-size: 1rem;
-  font-weight: 700;
-
-  background-color: var(--secondary-color);
-  padding: 5px 10px;
-  border-radius: 10px;
 }
