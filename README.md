@@ -18,6 +18,6 @@ Caso tenha sucesso:
 
 <img src="https://i.ibb.co/djx7Nmv/sucesso.png" alt="sucesso" border="0">
 
-E por último, caso as mensagens tenham sido exclúidas:
+E por último, caso as mensagens tenham sido excluídas:
 
 <img src="https://i.ibb.co/N9Tty0x/deleted.png" alt="deleted" border="0">
