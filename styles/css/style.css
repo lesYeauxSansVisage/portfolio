@@ -554,7 +554,6 @@ a {
   background-color: var(--secondary-color);
 }
 .message-section__message {
-  gap: 1rem;
   background-color: var(--main-color);
   width: 100%;
   padding: 1rem;
