@@ -59,6 +59,11 @@ a {
   background-color: var(--main-color);
 }
 
+h2 {
+  padding-bottom: 10px;
+  border-bottom: 4px solid var(--font-main-color);
+}
+
 .header {
   display: flex;
   align-items: center;
