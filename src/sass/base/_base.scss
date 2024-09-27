@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    // @include respond(phone) {
+    //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    // }
+
+    // @include respond(big-desktop) {
+    //     font-size: 90%; //1rem = 14.4px, 14.4/16 = 90%
+    // }
+
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+
+
+}
+
+button {
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
