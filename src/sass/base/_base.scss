@@ -1,8 +1,7 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
+
     box-sizing: inherit;
 }
 
@@ -27,18 +26,3 @@ body {
 
 }
 
-button {
-    border: none;
-    background-color: transparent;
-
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style-type: none;
-}
