@@ -42,10 +42,16 @@
 
     &-main {
         font-size: 5rem;
-        color: var(--main-color-light);
+        color: var(--light-grey-color);
         display: flex;
         align-items: center;
         justify-content: center;
+        font-weight: 300;
+
+        span {
+            color: var(--main-color-light);
+            font-weight: 400;
+        }
 
         svg {
             height: 5rem;
@@ -56,7 +62,7 @@
     &-sub {
         font-size: 2rem;
         color: var(--light-grey-color);
-        font-style: italic;
-        letter-spacing: 4px;
+        font-weight: 300;
+        letter-spacing: 3px;
     }
 }
