@@ -1,0 +1,25 @@
+.about-section {
+    padding-top: 15vh;
+    min-height: 100vh;
+    text-align: center;
+    color: var(--main-color);
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-right: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: inline-block;
+        padding-right: 3px;
+        padding-bottom: 3px;
+    }
+
+    p {
+        font-size: 2.5rem;
+        max-width: 80rem;
+        text-align: center;
+        margin: 0 auto;
+        text-align: justify;
+    }
+}
