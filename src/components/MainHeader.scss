@@ -17,15 +17,6 @@
 
     transition: all 0.2s ease;
 
-    &.active {
-        background-color: var(--main-color);
-        color: var(--dark-color-1);
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 1rem 4rem;
-    }
-
     &__logo {
         img {
             height: 4rem;
@@ -72,4 +63,13 @@
             }
         }
     }
+}
+
+.active {
+    background-color: var(--main-color);
+    color: var(--dark-color-1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4rem;
 }
