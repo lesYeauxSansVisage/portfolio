@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import "./MainHeader.scss";
 
 const headerLinks = [
-  { name: "Sobre", href: "#about" },
-  { name: "Projetos", href: "#projects" },
+  { name: "Sobre", href: "about" },
+  { name: "Projetos", href: "projects" },
 ];
 
 const MainHeader = () => {
@@ -39,7 +40,14 @@ const MainHeader = () => {
         <ul>
           {headerLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href}>{link.name}</a>
+              <Link
+                spy={true}
+                to={link.href}
+                duration={500}
+                activeClass="active"
+              >
+                {link.name}
+              </Link>
             </li>
           ))}
         </ul>
