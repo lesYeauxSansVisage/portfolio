@@ -32,9 +32,9 @@ const MainHeader = () => {
   return (
     <header className={mainHeaderClassname}>
       <div className="main-header__logo">
-        <a href="#">
+        <Link to="hero" spy={true} offset={-40}>
           <img src="\portfolio\icons8-letter-g-250.png" alt="" />
-        </a>
+        </Link>
       </div>
       <nav className="main-navigation">
         <ul>
