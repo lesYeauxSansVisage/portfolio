@@ -50,8 +50,17 @@
                 transition: color 0.5s ease;
                 padding: 1rem 2rem;
 
-                &:hover,
-                &:active,
+                @media (hover: hover) {
+
+                    &:hover {
+                        color: var(--light-grey-color-1);
+
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
+
                 &.active {
                     color: var(--light-grey-color-1);
 
@@ -59,6 +68,7 @@
                         width: 100%;
                     }
                 }
+
 
                 &::before {
                     content: "";
