@@ -19,7 +19,6 @@ const MainHeader = () => {
       }
     };
     window.addEventListener("scroll", changeBackground);
-
     return () => {
       window.removeEventListener("scroll", changeBackground);
     };
@@ -43,8 +42,10 @@ const MainHeader = () => {
               <Link
                 spy={true}
                 to={link.href}
-                duration={500}
                 activeClass="active"
+                smooth={true}
+                duration={200}
+                offset={-30}
               >
                 {link.name}
               </Link>
