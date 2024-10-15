@@ -1,0 +1,39 @@
+.contact-section {
+    padding: 2rem 0;
+    text-align: center;
+    display: grid;
+    justify-content: space-around;
+    gap: 0 2rem;
+    grid-template-columns: max-content max-content;
+
+    h2 {
+        align-self: center;
+        font-size: 7rem;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    &__link {
+        color: var(--main-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem;
+
+        span {
+            font-size: 1.8rem;
+        }
+
+        svg {
+            fill: var(--main-color);
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}
