@@ -3,7 +3,7 @@ import "./About.scss";
 const About = () => {
   return (
     <section className="about-section" id="about">
-      <h2>sobre</h2>
+      <h2 className="section-title section-title--light">sobre</h2>
       <p>
         Formado em Análise e Desenvolvimento de Sistemas. Participei de alguns
         programas de formação, incluindo um programa de residência em
