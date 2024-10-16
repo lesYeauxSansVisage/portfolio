@@ -1,19 +1,10 @@
 import "./Project.scss";
 
-export const projectData = {
-  title: "Project Title Example",
-  description:
-    " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut velittempora rerum at veniam labore nemo fugiat iste!",
-  github: "https://example.com",
-  live: "https://example.com",
-  image: "/portfolio/WandererAboveSeaOfFog.jpg",
-};
-
 export type ProjectProps = {
   title: string;
   description: string;
   github: string;
-  live: string;
+  live: string | null;
   image: string;
 };
 
