@@ -18,6 +18,10 @@ export type ProjectProps = {
 };
 
 const Project = ({ title, description, github, live, image }: ProjectProps) => {
+  const githubButtonClassname = live
+    ? "project__buttons--github"
+    : "project__buttons--github full-width-btn";
+
   return (
     <article className="project">
       <img className="project__image" src={image} />
@@ -26,10 +30,12 @@ const Project = ({ title, description, github, live, image }: ProjectProps) => {
         <p className="project__description">{description}</p>
 
         <div className="project__buttons">
-          <a href={live} target="_blank" className="project__buttons--live">
-            live
-          </a>
-          <a href={github} target="_blank" className="project__buttons--github">
+          {live && (
+            <a href={live} target="_blank" className="project__buttons--live">
+              live
+            </a>
+          )}
+          <a href={github} target="_blank" className={githubButtonClassname}>
             github
           </a>
         </div>
