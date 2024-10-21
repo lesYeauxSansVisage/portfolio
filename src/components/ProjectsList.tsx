@@ -1,5 +1,6 @@
-import Project, { ProjectProps } from "./Project";
 import "./ProjectsList.scss";
+
+import Project, { ProjectProps } from "./Project";
 
 type ProjectsListProps = {
   projects: ProjectProps[];

@@ -1,5 +1,7 @@
-import ProjectsList from "../components/ProjectsList";
 import "./Projects.scss";
+
+import ProjectsList from "../components/ProjectsList";
+
 import { projectsData } from "../data/projectData";
 
 const Projects = () => {

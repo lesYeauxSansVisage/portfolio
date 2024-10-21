@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
 import "./MainHeader.scss";
+
+import { useEffect, useState } from "react";
+
+import { Link } from "react-scroll";
 
 const headerLinks = [
   { name: "Sobre", href: "about" },
