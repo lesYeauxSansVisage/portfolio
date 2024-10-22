@@ -1,13 +1,22 @@
 import "./Hero.scss";
 
+import { motion } from "framer-motion";
+
+import {
+  slideInFromLeft,
+  slideInFromRight,
+} from "../framer-animations/slideIn";
+
 const Hero = () => {
   return (
     <section className="hero" id="hero">
       <h1 className="heading-primary">
-        <span className="heading-primary-main">
+        <motion.span {...slideInFromLeft} className="heading-primary-main">
           Olá. Eu sou <span>&lt;Gilberto &#8725;&gt;</span>
-        </span>
-        <span className="heading-primary-sub">Desenvolvedor Front-end</span>
+        </motion.span>
+        <motion.span {...slideInFromRight} className="heading-primary-sub">
+          Desenvolvedor Front-end
+        </motion.span>
       </h1>
     </section>
   );
