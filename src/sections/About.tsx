@@ -1,10 +1,22 @@
+import {
+  slideInFromLeft,
+  slideInFromRight,
+} from "../framer-animations/slideIn";
 import "./About.scss";
+
+import { motion, MotionProps } from "framer-motion";
 
 const About = () => {
   return (
     <section className="about-section" id="about">
-      <h2 className="section-title section-title--light">sobre</h2>
-      <p>
+      <motion.h2
+        {...slideInFromLeft}
+        className="section-title section-title--light"
+      >
+        sobre
+      </motion.h2>
+
+      <motion.p {...slideInFromRight}>
         Formado em Análise e Desenvolvimento de Sistemas. Participei de alguns
         programas de formação, incluindo um programa de residência em
         Desenvolvimento de Software (IUUL). Durante a residência, realizamos 3
@@ -17,7 +29,7 @@ const About = () => {
         depois unificamos dados vindos de diferentes fontes para carregá-los no
         Power BI, produzindo também a documentação de como tudo foi feito e um
         Dashboard para visualização.
-      </p>
+      </motion.p>
     </section>
   );
 };
