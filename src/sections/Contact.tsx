@@ -5,14 +5,20 @@ import GithubIcon from "../components/Icons/GithubIcon";
 import LinkedinIcon from "../components/Icons/LinkedinIcon";
 import PhoneIcon from "../components/Icons/PhoneIcon";
 
+import { motion } from "framer-motion";
+import { slideInFromRight, slideInFromTop } from "../framer-animations/slideIn";
+
 const Contact = () => {
   return (
     <section className="contact-section" id="contact">
-      <h2 className="section-title section-title--light">
+      <motion.h2
+        className="section-title section-title--light"
+        {...slideInFromTop}
+      >
         Vamos trabalhar juntos!
-      </h2>
+      </motion.h2>
 
-      <div className="contacts">
+      <motion.div className="contacts" {...slideInFromRight}>
         <a
           href="https://www.linkedin.com/in/gilberto-araujo-872274220/"
           target="_blank"
@@ -37,7 +43,7 @@ const Contact = () => {
           <span>+55 85 984621078</span>
           <PhoneIcon />
         </span>
-      </div>
+      </motion.div>
     </section>
   );
 };
