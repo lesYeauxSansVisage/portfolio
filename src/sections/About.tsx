@@ -4,7 +4,7 @@ import {
 } from "../framer-animations/slideIn";
 import "./About.scss";
 
-import { motion, MotionProps } from "framer-motion";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
