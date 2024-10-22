@@ -17,6 +17,7 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
           live={project.live}
           image={project.image}
           key={index}
+          id={index + 1}
         />
       ))}
     </div>
