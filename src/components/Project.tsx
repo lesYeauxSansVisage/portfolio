@@ -1,4 +1,10 @@
+import {
+  slideInFromLeft,
+  slideInFromRight,
+} from "../framer-animations/slideIn";
 import "./Project.scss";
+
+import { motion } from "framer-motion";
 
 export type ProjectProps = {
   title: string;
@@ -6,15 +12,25 @@ export type ProjectProps = {
   github: string;
   live: string | null;
   image: string;
+  id: number;
 };
 
-const Project = ({ title, description, github, live, image }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  github,
+  live,
+  image,
+  id,
+}: ProjectProps) => {
   const githubButtonClassname = live
     ? "project__buttons--github"
     : "project__buttons--github full-width-btn";
 
+  const animation = id % 2 === 0 ? slideInFromLeft : slideInFromRight;
+
   return (
-    <article className="project">
+    <motion.article className="project" {...animation}>
       <img className="project__image" src={image} />
       <div className="project__info">
         <h3 className="project__title">{title}</h3>
@@ -31,7 +47,7 @@ const Project = ({ title, description, github, live, image }: ProjectProps) => {
           </a>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
