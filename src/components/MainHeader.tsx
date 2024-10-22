@@ -41,14 +41,7 @@ const MainHeader = () => {
         <ul>
           {headerLinks.map((link) => (
             <li key={link.href}>
-              <Link
-                spy={true}
-                to={link.href}
-                activeClass="active"
-                smooth={true}
-                duration={200}
-                offset={-30}
-              >
+              <Link spy={true} to={link.href} activeClass="active" offset={-30}>
                 {link.name}
               </Link>
             </li>
