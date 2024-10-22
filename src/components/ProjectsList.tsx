@@ -9,15 +9,15 @@ type ProjectsListProps = {
 const ProjectsList = ({ projects }: ProjectsListProps) => {
   return (
     <div className="projects-list">
-      {projects.map((project, index) => (
+      {projects.map((project) => (
         <Project
           title={project.title}
           description={project.description}
           github={project.github}
           live={project.live}
           image={project.image}
-          key={index}
-          id={index + 1}
+          key={project.id}
+          id={project.id}
         />
       ))}
     </div>

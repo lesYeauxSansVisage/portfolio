@@ -6,6 +6,7 @@ export const projectsData = [
     github: "https://github.com/lesYeauxSansVisage/Agile-FrontEnd-Test",
     live: "https://lesyeauxsansvisage.github.io/Agile-FrontEnd-Test/",
     image: "/portfolio/agile-test.png",
+    id: 1,
   },
   {
     title: "E-Card",
@@ -14,6 +15,7 @@ export const projectsData = [
     github: "https://github.com/lesYeauxSansVisage/e-card",
     live: "https://lesyeauxsansvisage.github.io/e-card/",
     image: "/portfolio/e-card.jpg",
+    id: 2,
   },
   {
     title: "Projeto Final - SDC Academy",
@@ -22,6 +24,7 @@ export const projectsData = [
     github: "https://github.com/lesYeauxSansVisage/SDC-Academy-Sales-Info",
     live: null,
     image: "/portfolio/sdc-projeto-final.jpg",
+    id: 3,
   },
   {
     title: "React Weather App",
@@ -30,5 +33,6 @@ export const projectsData = [
     github: "https://github.com/lesYeauxSansVisage/react-weather-app",
     live: "https://lesyeauxsansvisage.github.io/react-weather-app/",
     image: "/portfolio/weather-app.jpg",
+    id: 4,
   },
 ];
